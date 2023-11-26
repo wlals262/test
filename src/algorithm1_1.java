@@ -1,10 +1,20 @@
-// Shift을(를) 두 번 눌러 전체 검색 대화상자를 열고 'show whitespaces'를 입력한 다음,
-// Enter를 누르세요. 그러면 코드 내에서 공백 문자를 확인할 수 있습니다.
+/*설명
+한 개의 문자열을 입력받고, 특정 문자를 입력받아 해당 특정문자가 입력받은 문자열에 몇 개 존재하는지 알아내는 프로그램을 작성하세요.
+대소문자를 구분하지 않습니다.문자열의 길이는 100을 넘지 않습니다.
+
+
+입력
+첫 줄에 문자열이 주어지고, 두 번째 줄에 문자가 주어진다.
+문자열은 영어 알파벳으로만 구성되어 있습니다.
+
+출력
+첫 줄에 해당 문자의 개수를 출력한다.
+
+*/
+
 import java.util.Scanner;
 public class algorithm1_1 {
     public static void main(String[] args) {
-        // 캐럿을 강조 표시된 텍스트에 놓고 Alt+Enter을(를) 누르면
-        // IntelliJ IDEA의 수정 제안을 볼 수 있습니다.
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
         char text1 = in.next().charAt(0);
@@ -14,7 +24,7 @@ public class algorithm1_1 {
             text1 = (char)((int)text1+32);
         for(int i = 0; i<str.length(); i++){
             if(str.charAt(i)>=65 && str.charAt(i)<=90){
-                temp = (int)str.charAt(i);
+                temp = str.charAt(i);
                 if(temp+32 == (int)text1) count++;
             }
             else{
