@@ -30,5 +30,12 @@ public class algorithm1_2 {
                 System.out.print((char) temp);
             }
         }
+        /*
+        String answer = "";
+        for (char x : str.toCharArray()){
+            if(Character.isLowerCase(x)) answer += Character.toUpperCase(x);
+            else answer += Character.toLowerCase(x);
+        }
+        */
     }
 }

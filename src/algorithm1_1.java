@@ -31,6 +31,19 @@ public class algorithm1_1 {
                 if(str.charAt(i)==text1) count++;
             }
         }
+
+        /*
+        int answer=0;
+        str = str.toUpperCase();
+        text1=Character.toUpperCase(text1);
+        for(char x : str.toCharArray()){ //String을 문자 배열을 생성함
+            if(x==text1) answer++;
+        }
+
+         */
+
+
+
         System.out.println(count);
     }
 }
